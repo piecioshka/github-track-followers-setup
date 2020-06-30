@@ -1,2 +1,3 @@
 followers/*.md
 bin/*.sh
+*.log

@@ -13,7 +13,8 @@ mkdir -p $directory
 cat > $filename <<EOL
 #!/usr/bin/env bash
 
-npx github-track-followers -u $user > $dump
+command=$(which github-track-followers)
+eval \$command -u $user > $dump
 EOL
 
 # Make it executable
