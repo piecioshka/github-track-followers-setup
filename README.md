@@ -5,6 +5,7 @@
 ## Commands
 
 ```bash
+npm install -g github-track-followers
 ./install.sh
 ./clean.sh
 ```
