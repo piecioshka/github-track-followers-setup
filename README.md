@@ -7,5 +7,10 @@
 ```bash
 npm install -g github-track-followers
 ./install.sh
+```
+
+to remove logs and `dump.sh`
+
+```bash
 ./clean.sh
 ```
