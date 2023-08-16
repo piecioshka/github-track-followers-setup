@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
+user='piecioshka'
+
+### WARNING: Carefully edit below ###
+
 dirname=`pwd`
 directory="${dirname}/followers"
 filename="${dirname}/bin/dump.sh"
-user='piecioshka'
-dump="$directory/$user-\$(date +'%Y-%m-%d-%H-%M-%S').md"
 
 # Create directory for dumps
 mkdir -p $directory
@@ -14,7 +16,9 @@ cat > $filename <<EOL
 #!/usr/bin/env bash
 
 command=$(which github-track-followers)
-eval \$command -u $user > $dump
+dump="$directory/$user-\$(date +'%Y-%m-%d-%H-%M-%S').md"
+eval \$command -u $user > \$dump
+head -n 3 \$dump
 EOL
 
 # Make it executable
