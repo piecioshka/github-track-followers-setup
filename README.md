@@ -8,9 +8,11 @@
 npm install -g github-track-followers
 ```
 
+## Scripts
+
 ```bash
 ./clean.sh # remove logs
-./install.sh # create bin/dump.sh
+./install.sh # create bin/dump.sh (in this file you can define an user)
 ```
 
 ## Crontab
