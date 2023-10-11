@@ -24,7 +24,7 @@ node \$command -u $user > \$dump
 
 # This will be stored in ~/logs/
 echo $(date)
-head -n 3 \$dump
+head -n 1 \$dump
 EOL
 
 # Make it executable
