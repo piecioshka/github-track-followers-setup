@@ -14,3 +14,16 @@ to remove logs and `dump.sh`
 ```bash
 ./clean.sh
 ```
+
+## Crontab
+
+```
+0 8 * * * ~/projects/github-track-followers-setup/bin/dump.sh >> ~/logs/github-track-followers.access.log 2> ~/logs/github-track-followers.error.log
+```
+
+## Logs
+
+```
+~/logs/github-track-followers.access.log
+~/logs/github-track-followers.error.log
+```

@@ -17,7 +17,13 @@ cat > $filename <<EOL
 
 command=$(which github-track-followers)
 dump="$directory/$user-\$(date +'%Y-%m-%d-%H-%M-%S').md"
-eval \$command -u $user > \$dump
+node=$(which node)
+
+# This will be stored in ../followers/
+node \$command -u $user > \$dump
+
+# This will be stored in ~/logs/
+echo $(date)
 head -n 3 \$dump
 EOL
 
