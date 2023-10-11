@@ -2,17 +2,15 @@
 
 :hammer: Installation script for [github-track-followers](https://github.com/piecioshka/github-track-followers)
 
-## Commands
+## Install
 
 ```bash
 npm install -g github-track-followers
-./install.sh
 ```
 
-to remove logs and `dump.sh`
-
 ```bash
-./clean.sh
+./clean.sh # remove logs
+./install.sh # create bin/dump.sh
 ```
 
 ## Crontab
@@ -23,7 +21,8 @@ to remove logs and `dump.sh`
 
 ## Logs
 
-```
-~/logs/github-track-followers.access.log
-~/logs/github-track-followers.error.log
+```bash
+mkdir ~/logs/
+touch ~/logs/github-track-followers.access.log
+touch ~/logs/github-track-followers.error.log
 ```

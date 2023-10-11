@@ -23,7 +23,7 @@ node=$(which node)
 node \$command -u $user > \$dump
 
 # This will be stored in ~/logs/
-echo $(date)
+echo -n "\$(date) "
 head -n 1 \$dump
 EOL
 
