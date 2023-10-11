@@ -18,7 +18,7 @@ npm install -g github-track-followers
 ## Crontab
 
 ```
-0 8 * * * ~/projects/github-track-followers-setup/bin/dump.sh >> ~/logs/github-track-followers.access.log 2> ~/logs/github-track-followers.error.log
+0 20 * * * ~/projects/github-track-followers-setup/bin/dump.sh >> ~/logs/github-track-followers.access.log 2> ~/logs/github-track-followers.error.log
 ```
 
 ## Logs
