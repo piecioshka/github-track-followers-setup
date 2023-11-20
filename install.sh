@@ -20,7 +20,7 @@ dump="$directory/$user-\$(date +'%Y-%m-%d-%H-%M-%S').md"
 node=$(which node)
 
 # This will be stored in ../followers/
-$node \$command -u $user > \$dump
+\$node \$command -u $user > \$dump
 
 # This will be stored in ~/logs/
 echo -n "\$(date) - "
