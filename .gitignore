@@ -1,3 +1,3 @@
-followers/*.md
+bin/*.log
 bin/*.sh
-*.log
+followers/*
