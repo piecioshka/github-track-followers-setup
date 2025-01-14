@@ -9,8 +9,8 @@ npm install -g github-track-followers
 cd ~/projects/
 git clone git@github.com:piecioshka/github-track-followers-setup.git
 cd github-track-followers-setup
-# ./clean.sh # remove logs
-./install.sh # create bin/dump.sh (in this file you can define an user)
+# ./scripts/clean.sh # remove logs
+./scripts/install.sh # create bin/dump.sh (in this file you can define an user)
 ```
 
 ## Step 2. Create logs files
