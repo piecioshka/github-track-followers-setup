@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-user='piecioshka'
+username='piecioshka'
 
 ### WARNING: Carefully edit below ###
 
@@ -16,11 +16,11 @@ cat > $filename <<EOL
 #!/usr/bin/env bash
 
 command=$(which github-track-followers)
-dump="$directory/$user-\$(date +'%Y-%m-%d-%H-%M-%S').md"
+dump="$directory/$username-\$(date +'%Y-%m-%d-%H-%M-%S').md"
 node=$(which node)
 
 # This will be stored in ../followers/
-\$node \$command -u $user > \$dump
+\$node \$command -u $username > \$dump
 
 # This will be stored in ~/logs/
 echo -n "\$(date) - "
